@@ -8,8 +8,11 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.6
+  firebase_core: ^2.24.0
   flutter:
     sdk: flutter
+  flutter_slidable: ^3.0.1
+  flutter_svg: ^2.0.9
   get: ^4.6.6
   percent_indicator: ^4.2.3
   persistent_bottom_nav_bar: ^5.0.2
