@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:to_do_app/firebase_options.dart';
 import 'package:to_do_app/views/main_page.dart';
+import 'package:to_do_app/views/sign_up.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,6 +21,12 @@ class MainApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: MainPage(),
+      getPages: [
+        GetPage(
+          name: SignUp.routeName,
+          page: () => SignUp(),
+        ),
+      ],
     );
   }
 }

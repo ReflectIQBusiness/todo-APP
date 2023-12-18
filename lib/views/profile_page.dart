@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:to_do_app/constants/colors.dart';
+import 'package:to_do_app/views/sign_up.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({
@@ -48,12 +49,15 @@ class ProfilePage extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          "Sign Up",
-          style: TextStyle(
-            fontSize: Get.width / 30,
-            fontWeight: FontWeight.w500,
-            decoration: TextDecoration.underline,
+        InkWell(
+          onTap: () => Get.toNamed(SignUp.routeName),
+          child: Text(
+            "Sign Up",
+            style: TextStyle(
+              fontSize: Get.width / 30,
+              fontWeight: FontWeight.w500,
+              decoration: TextDecoration.underline,
+            ),
           ),
         ),
         Text(
